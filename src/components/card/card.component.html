@@ -1,0 +1,22 @@
+<article class="Card">
+  <header class="Card__header">
+    <h4 class="Card__title">{{ title }}</h4>
+    <p class="Card__subtitle">
+      <span class="Card__author">{{ author }}</span>
+      <span class="Card__publication-date">{{ publicationDate | date }}</span>
+    </p>
+  </header>
+  <main class="Card__content">
+    <img class="Card__image" [src]="imgUrl" alt="New img">
+    <p class="Card__content">{{ content }}</p>
+  </main>
+  <footer class="Card__footer">
+    <div class="Card__actions" *ngIf="url">
+      <app-btn
+        class="Card__action"
+        label="See more"
+        (btnClick)="onButtonClick($event)">
+      </app-btn>
+    </div>
+  </footer>
+</article>

@@ -1,0 +1,1 @@
+export { NewsListView } from './list/news-list.view';

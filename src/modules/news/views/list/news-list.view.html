@@ -1,0 +1,14 @@
+<div class="row equal">
+  <div 
+    *ngFor="let new of news"
+    class="col-4 mb-3">
+    <app-card 
+      [title]="new?.title"
+      [content]="new?.description"
+      [author]="new?.author || ''"
+      [publicationDate]="new?.publishedAt || ''"
+      [imgUrl]="new?.urlToImage"
+      [url]="new?.url">
+    </app-card>
+  </div>
+</div>

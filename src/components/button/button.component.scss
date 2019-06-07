@@ -1,0 +1,28 @@
+@import '../../styles/abstracts/variables';
+
+.Button {
+	background-color:$color-primary;
+	-moz-border-radius: 2.8rem;
+	-webkit-border-radius: 2.8rem;
+	border-radius: 2.8rem;
+	border: 1px solid $color-primary-light;
+	display: inline-block;
+	cursor: pointer;
+	color: $color-white;
+	font-family: Arial;
+	font-size: 1.7rem;
+	padding: .6rem 2.1rem;
+	text-decoration: none;
+  text-shadow: 0px 1px 0px $color-primary-dark;
+  
+  &:hover {
+    background-color: $color-primary-light;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+        
